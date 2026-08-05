@@ -1,0 +1,17 @@
+PROJETO ATUALIZADO
+
+1. Extraia o ZIP.
+2. Abra a pasta ADVOGADO LUCAS no VS Code.
+3. No terminal, execute: npm install
+4. Depois execute: npm run dev
+5. Abra o endereço mostrado no terminal.
+
+O projeto inclui:
+- layout completo baseado no Figma;
+- logo e foto principal;
+- áreas de atuação;
+- formulário visual;
+- mapa incorporado;
+- versão responsiva.
+
+Observação: a seção “Conheça” usa a mesma foto principal. Quando você tiver a segunda foto de gravata vermelha em arquivo separado, ela pode ser trocada facilmente.
