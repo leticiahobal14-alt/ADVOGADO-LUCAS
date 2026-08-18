@@ -181,14 +181,13 @@
 
 .trabalhista-hero__lawyer {
   position: absolute;
-
-  right: 0;
+  right: 3%;
   bottom: 0;
-
   z-index: 2;
 
-  width: min(47%, 660px);
-  max-height: 100%;
+  width: 500px;
+  max-width: 40%;
+  height: auto;
 
   object-fit: contain;
   object-position: right bottom;
@@ -615,14 +614,18 @@
     font-size: 17px;
   }
 
-  .trabalhista-hero__lawyer {
-    right: -55px;
+.trabalhista-hero__lawyer {
+  display: none !important;
+}
+.trabalhista-hero {
+  min-height: auto;
+  padding: 55px 22px 80px;
+}
 
-    width: 78%;
-
-    opacity: 0.82;
-  }
-
+.trabalhista-hero__content {
+  width: 100%;
+  max-width: 100%;
+}
 
   .trabalhista-situacoes {
     padding: 55px 20px 105px;

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import './App.css'
-import heroVisual from './assets/foto-hero.png'
+import heroVisual from './assets/hero-final.png'
 import logoSimbolo from './assets/icone.svg'
 import advogadoSobre from './assets/foto-sobre.png'
 import cardCriminal from './assets/card-criminal.png'

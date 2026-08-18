@@ -1,9 +1,10 @@
 import './Trabalhista.css'
 
-import heroTrabalhista from './assets/foto-hero.png'
+import heroTrabalhista from './assets/hero-final.png'
 import fotoSobre from './assets/foto-sobre.png'
 import logoSimbolo from './assets/icone.svg'
 import logoCompleta from './assets/logo-completa.png'
+import logoSimbolo from './assets/icone.svg'
 
 function Trabalhista() {
   function handleSubmit(event) {
@@ -37,8 +38,8 @@ ${mensagem}`
       <header className="trabalhista-header">
 
         <a href="/" className="trabalhista-header__logo">
-          <img src={logoSimbolo} alt="Lucas Hobal de Oliveira" />
-        </a>
+  <img src={logoSimbolo} alt="Lucas Hobal de Oliveira" />
+</a>
 
         <div className="trabalhista-header__info">
           <span>✉ lucashobaldeoliveiraadv@gmail.com</span>
