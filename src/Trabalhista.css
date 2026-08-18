@@ -1,0 +1,703 @@
+/* =========================================
+   LANDING PAGE TRABALHISTA
+========================================= */
+
+.trabalhista-page {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+  background: #000000;
+  color: #ffffff;
+  font-family: 'Playfair Display', serif;
+}
+
+
+/* =========================================
+   CABEÇALHO
+========================================= */
+
+.trabalhista-header {
+  width: 100%;
+  min-height: 58px;
+  padding: 6px 28px;
+
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  background: #2d4971;
+  border-bottom: none;
+}
+
+.trabalhista-header__logo {
+  flex-shrink: 0;
+}
+
+.trabalhista-header__logo img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.trabalhista-header__info {
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 25px;
+
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+}
+.trabalhista-header__home {
+  padding: 8px 16px;
+
+  border: 1px solid #ffffff;
+  border-radius: 999px;
+
+  color: #ffffff;
+  background: transparent;
+
+  font-size: 15px;
+  font-weight: 700;
+  white-space: nowrap;
+
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.trabalhista-header__home:hover {
+  background: #ffffff;
+  color: #2d4971;
+}
+.trabalhista-header__button {
+  padding: 8px 18px;
+
+  border-radius: 999px;
+
+  background: #8d99aa;
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.trabalhista-hero {
+  position: relative;
+
+  width: 100%;
+  min-height: 560px;
+
+  padding: 80px 6% 110px;
+
+  overflow: hidden;
+
+  background: #03152f;
+}
+
+.trabalhista-hero::after {
+  content: '';
+
+  position: absolute;
+  left: -5%;
+  bottom: -85px;
+
+  width: 110%;
+  height: 170px;
+
+  background: #000000;
+
+  border-radius: 50% 50% 0 0;
+  transform: rotate(-2deg);
+
+  z-index: 5;
+}
+
+.trabalhista-hero__content {
+  position: relative;
+  z-index: 3;
+
+  width: 55%;
+  max-width: 720px;
+}
+
+.trabalhista-hero h1 {
+  margin: 0 0 30px;
+
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(34px, 4vw, 58px);
+  line-height: 1.03;
+
+  color: #ffffff;
+}
+
+.trabalhista-hero h1 strong {
+  color: #fff200;
+}
+
+.trabalhista-hero p {
+  max-width: 660px;
+
+  margin: 0 0 8px;
+
+  font-size: clamp(19px, 2vw, 29px);
+  line-height: 1.3;
+}
+
+.trabalhista-hero__local {
+  font-weight: 700;
+}
+
+.trabalhista-hero__button {
+  display: inline-flex;
+
+  margin-top: 50px;
+  margin-left: 18%;
+
+  padding: 12px 30px;
+
+  border-radius: 999px;
+
+  background: #6e7a8a;
+  color: #ffffff;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  transition: transform 0.2s ease;
+}
+
+.trabalhista-hero__button:hover {
+  transform: translateY(-2px);
+}
+
+.trabalhista-hero__lawyer {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+
+  z-index: 2;
+
+  width: min(47%, 660px);
+  max-height: 100%;
+
+  object-fit: contain;
+  object-position: right bottom;
+}
+
+
+/* =========================================
+   SITUAÇÕES
+========================================= */
+
+.trabalhista-situacoes {
+  position: relative;
+
+  padding: 65px 6% 115px;
+
+  background: #000000;
+  color: #ffffff;
+}
+
+.trabalhista-situacoes h2 {
+  max-width: 1200px;
+
+  margin: 0 auto 48px;
+
+  font-size: clamp(32px, 4vw, 51px);
+  line-height: 1.1;
+}
+
+.trabalhista-situacoes__grid {
+  width: min(920px, 100%);
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+.trabalhista-situacoes article {
+  min-height: 165px;
+
+  padding: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: #8b806c;
+  color: #eeeeee;
+
+  text-align: center;
+
+  font-family: Arial, sans-serif;
+  font-size: clamp(24px, 2.2vw, 35px);
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+
+/* =========================================
+   CONTATO
+========================================= */
+
+.trabalhista-contato {
+  position: relative;
+
+  width: 100%;
+
+  padding: 90px 6%;
+
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr;
+
+  gap: 60px;
+
+  background: #ede3ce;
+}
+
+.trabalhista-contato::before {
+  content: '';
+
+  position: absolute;
+
+  left: -5%;
+  top: -70px;
+
+  width: 110%;
+  height: 120px;
+
+  background: #ede3ce;
+
+  border-radius: 50% 50% 0 0;
+
+  transform: rotate(2deg);
+}
+
+.trabalhista-contato__texto,
+.trabalhista-form {
+  position: relative;
+  z-index: 2;
+}
+
+.trabalhista-contato__texto h2 {
+  margin: 0;
+
+  color: #172f69;
+
+  font-size: clamp(34px, 4vw, 55px);
+  line-height: 1.05;
+}
+
+.trabalhista-contato__linha {
+  width: 52%;
+  height: 4px;
+
+  margin: 15px 0 28px;
+
+  border-radius: 999px;
+
+  background: #c78354;
+}
+
+.trabalhista-contato__texto p {
+  max-width: 720px;
+
+  margin: 0;
+
+  color: #2d4971;
+
+  font-size: clamp(26px, 3vw, 42px);
+  line-height: 1.25;
+}
+
+.trabalhista-form {
+  padding: 32px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+
+  border-radius: 12px;
+
+  background: rgba(128, 119, 103, 0.55);
+
+  color: #172f69;
+}
+
+.trabalhista-form h3 {
+  margin: 0 0 5px;
+
+  font-size: 24px;
+}
+
+.trabalhista-form label {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.trabalhista-form input,
+.trabalhista-form textarea {
+  width: 100%;
+
+  padding: 12px 16px;
+
+  border: 0;
+  border-radius: 999px;
+
+  outline: none;
+
+  background: rgba(237, 227, 206, 0.8);
+
+  color: #172f69;
+}
+
+.trabalhista-form textarea {
+  min-height: 95px;
+  border-radius: 20px;
+  resize: vertical;
+}
+
+.trabalhista-form button {
+  width: fit-content;
+
+  margin: 5px auto 0;
+
+  padding: 10px 32px;
+
+  border: 0;
+  border-radius: 999px;
+
+  background: #172f69;
+  color: #ffffff;
+
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   SOBRE
+========================================= */
+
+.trabalhista-sobre {
+  padding: 75px 3%;
+
+  background: #000000;
+}
+
+.trabalhista-sobre__box {
+  width: min(1180px, 100%);
+
+  margin: 0 auto;
+
+  padding: 28px;
+
+  border: none;
+
+  background: #8b806c;
+}
+
+.trabalhista-sobre__box h2 {
+  margin: 0 0 35px;
+
+  text-align: center;
+
+  font-size: clamp(35px, 4vw, 55px);
+}
+
+.trabalhista-sobre__conteudo {
+  display: grid;
+
+  grid-template-columns: 320px 1fr;
+
+  gap: 35px;
+
+  align-items: center;
+}
+
+.trabalhista-sobre__conteudo img {
+  width: 100%;
+  height: 380px;
+
+  border: 5px solid #111111;
+
+  object-fit: cover;
+  object-position: center top;
+
+  filter: grayscale(100%);
+}
+
+.trabalhista-sobre__conteudo p {
+  margin: 0 0 8px;
+
+  font-size: clamp(20px, 2.2vw, 30px);
+  line-height: 1.28;
+}
+
+.trabalhista-sobre__conteudo strong {
+  display: block;
+
+  margin-top: 35px;
+
+  text-align: right;
+
+  font-size: 19px;
+}
+
+
+/* =========================================
+   RODAPÉ
+========================================= */
+
+.trabalhista-footer {
+  min-height: 330px;
+
+  padding: 45px 8%;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 80px;
+
+  align-items: center;
+
+  background: #03152f;
+}
+
+.trabalhista-footer iframe {
+  width: 100%;
+  height: 250px;
+
+  border: 0;
+}
+
+.trabalhista-footer__logo {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.trabalhista-footer__logo img {
+  width: min(360px, 85%);
+  height: auto;
+
+  object-fit: contain;
+}
+
+.trabalhista-footer__logo span {
+  color: #ede3ce;
+
+  font-size: 14px;
+}
+.trabalhista-situacoes__button {
+  display: flex;
+  width: fit-content;
+
+  margin: 45px auto 0;
+
+  padding: 12px 30px;
+
+  border-radius: 999px;
+
+  background: #6e7a8a;
+  color: #ffffff;
+
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.trabalhista-situacoes__button:hover {
+  background: #7d8998;
+  transform: translateY(-2px);
+}
+
+
+/* =========================================
+   CELULAR
+========================================= */
+
+@media (max-width: 760px) {
+  
+
+  .trabalhista-header {
+    min-height: 55px;
+
+    padding: 7px 12px;
+
+    gap: 10px;
+  }
+
+  .trabalhista-header__logo img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .trabalhista-header__info {
+    display: none;
+  }
+.trabalhista-header__home {
+  margin-left: auto;
+  padding: 7px 11px;
+  font-size: 12px;
+}
+
+.trabalhista-header__button {
+  margin-left: 0;
+  padding: 7px 11px;
+  font-size: 12px;
+}
+  .trabalhista-header__button {
+    margin-left: auto;
+
+    padding: 7px 13px;
+
+    font-size: 14px;
+  }
+
+
+  .trabalhista-hero {
+    min-height: 570px;
+
+    padding: 55px 22px 90px;
+  }
+
+  .trabalhista-hero__content {
+    width: 100%;
+  }
+
+  .trabalhista-hero h1 {
+    max-width: 95%;
+
+    font-size: 37px;
+  }
+
+  .trabalhista-hero p {
+    width: 90%;
+
+    font-size: 19px;
+  }
+
+  .trabalhista-hero__button {
+    margin-top: 28px;
+    margin-left: 0;
+
+    font-size: 17px;
+  }
+
+  .trabalhista-hero__lawyer {
+    right: -55px;
+
+    width: 78%;
+
+    opacity: 0.82;
+  }
+
+
+  .trabalhista-situacoes {
+    padding: 55px 20px 105px;
+  }
+
+  .trabalhista-situacoes h2 {
+    font-size: 30px;
+  }
+
+  .trabalhista-situacoes__grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
+  }
+
+  .trabalhista-situacoes article {
+    min-height: 125px;
+
+    padding: 12px;
+
+    font-size: 20px;
+  }
+
+  .trabalhista-contato {
+    padding: 70px 22px;
+
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .trabalhista-contato__texto h2 {
+    font-size: 34px;
+  }
+
+  .trabalhista-contato__texto p {
+    font-size: 25px;
+  }
+
+
+  .trabalhista-sobre {
+    padding: 55px 18px;
+  }
+
+  .trabalhista-sobre__box {
+    padding: 22px;
+  }
+
+  .trabalhista-sobre__box h2 {
+    font-size: 34px;
+  }
+
+  .trabalhista-sobre__conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .trabalhista-sobre__conteudo img {
+    max-width: 270px;
+
+    height: 330px;
+
+    margin: 0 auto;
+  }
+
+  .trabalhista-sobre__conteudo p {
+    font-size: 20px;
+  }
+
+
+  .trabalhista-footer {
+    padding: 45px 22px;
+
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+}
