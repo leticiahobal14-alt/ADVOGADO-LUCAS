@@ -661,16 +661,20 @@ button, input, select, textarea { font: inherit; }
 
 .hero__lawyer {
   position: absolute !important;
-  right: -8px !important;
-  bottom: -118px !important;
+  right: 2% !important;
+  bottom: 0 !important;
   z-index: 3 !important;
-  width: auto !important;
-  height: calc(100% + 190px) !important;
-  max-width: 63% !important;
+
+  width: 560px !important;
+  height: auto !important;
+  max-width: 42% !important;
+
   object-fit: contain !important;
   object-position: right bottom !important;
-}
 
+  transform: none !important;
+  filter: none !important;
+}
 .hero::after {
   content: '';
   position: absolute;
@@ -753,7 +757,7 @@ button, input, select, textarea { font: inherit; }
   }
 
   .hero__lawyer {
-    max-width: 60% !important;
+    max-width: 42% !important;
   }
 }
 
