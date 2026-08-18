@@ -1,13 +1,13 @@
 import { useEffect, useRef, useState } from 'react'
 import './App.css'
-import heroVisual from './assets/foto-hero.svg'
+import heroVisual from './assets/foto-hero.png'
 import logoSimbolo from './assets/icone.svg'
-import advogadoSobre from './assets/foto-sobre.svg'
-import cardCriminal from './assets/card-criminal.svg'
-import cardFamilia from './assets/card-familia.svg'
-import cardConsumidor from './assets/card-consumidor.svg'
-import cardCivil from './assets/card-civil.svg'
-import cardPenal from './assets/card-penal.svg'
+import advogadoSobre from './assets/foto-sobre.png'
+import cardCriminal from './assets/card-criminal.png'
+import cardFamilia from './assets/card-familia.png'
+import cardConsumidor from './assets/card-consumidor.png'
+import cardCivil from './assets/card-civil.png'
+import cardPenal from './assets/card-penal.png'
 
 const carouselCards = [
   {

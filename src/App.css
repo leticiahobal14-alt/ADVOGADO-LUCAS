@@ -123,6 +123,11 @@ button, input, select, textarea { font: inherit; }
     height: auto;
     z-index: 1;
 }
+@media (max-width: 768px) {
+    .hero__lawyer {
+        display: none !important;
+    }
+}
 
 .button {
   display: inline-flex;
