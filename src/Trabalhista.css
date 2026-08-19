@@ -729,3 +729,22 @@ s
     display: none !important;
   }
 }
+/* TAMANHO DA FOTO SOMENTE NA PÁGINA TRABALHISTA */
+
+@media (min-width: 761px) {
+  .trabalhista-hero .hero__lawyer {
+    width: 650px !important;
+    max-width: 44% !important;
+
+    right: 1% !important;
+    bottom: -60px !important;
+
+    height: auto !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .trabalhista-hero .hero__lawyer {
+    display: none !important;
+  }
+}
