@@ -653,7 +653,7 @@ button, input, select, textarea { font: inherit; }
 
   width: 700px !important;
   height: auto !important;
-  max-width: 48% !important;
+  max-width: 40% !important;
 
   object-fit: contain !important;
   object-position: right bottom !important;
