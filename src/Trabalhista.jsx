@@ -2,7 +2,6 @@ import './Trabalhista.css'
 
 import heroTrabalhista from './assets/hero-final.png'
 import fotoSobre from './assets/foto-sobre.png'
-import logoSimbolo from './assets/icone.svg'
 import logoCompleta from './assets/logo-completa.png'
 import logoSimbolo from './assets/icone.svg'
 

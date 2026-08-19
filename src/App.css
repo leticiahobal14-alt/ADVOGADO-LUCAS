@@ -115,20 +115,6 @@ button, input, select, textarea { font: inherit; }
   max-width: 560px;
 }
 
-.hero__lawyer {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    width: 560px;
-    height: auto;
-    z-index: 1;
-}
-@media (max-width: 768px) {
-    .hero__lawyer {
-        display: none !important;
-    }
-}
-
 .button {
   display: inline-flex;
   min-height: 44px;
@@ -433,7 +419,6 @@ button, input, select, textarea { font: inherit; }
   .topbar__button { margin-left: 0; }
   .hero__inner { padding-inline: 28px; }
   .hero__copy { width: 60%; }
-  .hero__lawyer { right: 20px; width: 380px; }
   .practice__grid { grid-template-columns: repeat(2, 1fr); }
 }
 
@@ -445,7 +430,6 @@ button, input, select, textarea { font: inherit; }
   .hero__copy { width: 100%; margin-top: 20px; }
   .hero h1 { font-size: 28px; }
   .hero__support { text-align: center; }
-  .hero__lawyer { position: relative; right: auto; width: 330px; margin: 28px auto 0; }
   .benefits { margin-top: 0; grid-template-columns: 1fr; }
   .benefits article { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.05); }
   .about { grid-template-columns: 1fr; gap: 28px; padding-top: 55px; }
@@ -661,13 +645,15 @@ button, input, select, textarea { font: inherit; }
 
 .hero__lawyer {
   position: absolute !important;
-  right: 2% !important;
-  bottom: 0 !important;
+
+  right: -1% !important;
+  bottom: -75px !important;
+
   z-index: 3 !important;
 
-  width: 560px !important;
+  width: 700px !important;
   height: auto !important;
-  max-width: 42% !important;
+  max-width: 48% !important;
 
   object-fit: contain !important;
   object-position: right bottom !important;
@@ -756,9 +742,6 @@ button, input, select, textarea { font: inherit; }
     width: 54%;
   }
 
-  .hero__lawyer {
-    max-width: 42% !important;
-  }
 }
 
 @media (max-width: 720px) {
@@ -827,13 +810,7 @@ button, input, select, textarea { font: inherit; }
   }
 
   .hero__lawyer {
-    position: relative !important;
-    right: auto !important;
-    bottom: -56px !important;
-    width: 118% !important;
-    height: auto !important;
-    max-width: none !important;
-    margin: 12px -9% 0 !important;
+    display: none !important;
   }
 
   .hero::after {
