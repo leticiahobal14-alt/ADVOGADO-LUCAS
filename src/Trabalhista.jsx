@@ -94,7 +94,7 @@ ${mensagem}`
         <img
           src={heroTrabalhista}
           alt="Advogado Lucas Hobal de Oliveira"
-          className="hero__lawyer"
+          className="trabalhista-hero__lawyer"
         />
 
       </section>

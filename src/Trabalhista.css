@@ -94,11 +94,10 @@
   min-height: auto;
   padding: 55px 22px 150px;
 }
+/* No celular não usamos a onda que estava cobrindo o conteúdo */
 .trabalhista-hero::after {
-  bottom: -115px;
-  height: 170px;
+  display: none;
 }
-
 .trabalhista-hero::after {
   content: '';
 
@@ -177,10 +176,8 @@
 
 .trabalhista-hero__lawyer {
   position: absolute;
-
   right: -2%;
   bottom: -55px;
-
   z-index: 2;
 
   width: 760px;
@@ -198,7 +195,7 @@ s
 .trabalhista-situacoes {
   position: relative;
 
-  padding: 65px 6% 115px;
+  padding: 150px 20px 105px;
 
   background: #000000;
   color: #ffffff;
@@ -544,13 +541,14 @@ s
 ========================================= */
 
 @media (max-width: 760px) {
-  
+
+  /* =========================
+     CABEÇALHO
+  ========================= */
 
   .trabalhista-header {
     min-height: 55px;
-
     padding: 7px 12px;
-
     gap: 10px;
   }
 
@@ -559,73 +557,76 @@ s
     height: 38px;
   }
 
+  /* Esconde e-mail, telefone e horário no celular */
   .trabalhista-header__info {
     display: none;
   }
-.trabalhista-header__home {
-  margin-left: auto;
-  padding: 7px 11px;
-  font-size: 12px;
-}
 
-.trabalhista-header__button {
-  margin-left: 0;
-  padding: 7px 11px;
-  font-size: 12px;
-}
-  .trabalhista-header__button {
+  .trabalhista-header__home {
     margin-left: auto;
+    padding: 7px 11px;
+    font-size: 12px;
+  }
 
-    padding: 7px 13px;
-
-    font-size: 14px;
+  .trabalhista-header__button {
+    margin-left: 0;
+    padding: 7px 11px;
+    font-size: 12px;
   }
 
 
-  .trabalhista-hero {
-    min-height: 570px;
+  /* =========================
+     HERO AZUL
+  ========================= */
 
-    padding: 55px 22px 90px;
+  .trabalhista-hero {
+    min-height: auto;
+    padding: 55px 22px 70px;
+    background: #03152f !important;
   }
 
   .trabalhista-hero__content {
     width: 100%;
+    max-width: 100%;
   }
 
   .trabalhista-hero h1 {
-    max-width: 95%;
-
+    max-width: 100%;
     font-size: 37px;
+    line-height: 1.05;
   }
 
   .trabalhista-hero p {
-    width: 90%;
-
+    width: 100%;
+    max-width: 100%;
     font-size: 19px;
   }
 
   .trabalhista-hero__button {
     margin-top: 28px;
     margin-left: 0;
-
     font-size: 17px;
   }
 
-.trabalhista-hero__lawyer {
-  display: none !important;
-}
-.trabalhista-hero {
-  min-height: auto;
-  padding: 55px 22px 80px;
-}
+  /* Foto não aparece no celular */
+  .trabalhista-hero__lawyer,
+  .trabalhista-hero .hero__lawyer {
+    display: none !important;
+  }
 
-.trabalhista-hero__content {
-  width: 100%;
-  max-width: 100%;
-}
+  /* Remove a onda no celular */
+  .trabalhista-hero::after {
+    display: none !important;
+  }
+
+
+  /* =========================
+     SITUAÇÕES - FUNDO PRETO
+  ========================= */
 
   .trabalhista-situacoes {
     padding: 55px 20px 105px;
+    background: #000000;
   }
 
   .trabalhista-situacoes h2 {
@@ -634,23 +635,29 @@ s
 
   .trabalhista-situacoes__grid {
     grid-template-columns: repeat(2, 1fr);
-
     gap: 12px;
   }
 
   .trabalhista-situacoes article {
     min-height: 125px;
-
     padding: 12px;
-
     font-size: 20px;
   }
 
+  .trabalhista-situacoes__button {
+    margin-top: 32px;
+    padding: 10px 24px;
+    font-size: 17px;
+  }
+
+
+  /* =========================
+     CONTATO
+  ========================= */
+
   .trabalhista-contato {
     padding: 70px 22px;
-
     grid-template-columns: 1fr;
-
     gap: 40px;
   }
 
@@ -662,6 +669,10 @@ s
     font-size: 25px;
   }
 
+
+  /* =========================
+     SOBRE
+  ========================= */
 
   .trabalhista-sobre {
     padding: 55px 18px;
@@ -681,9 +692,7 @@ s
 
   .trabalhista-sobre__conteudo img {
     max-width: 270px;
-
     height: 330px;
-
     margin: 0 auto;
   }
 
@@ -692,55 +701,14 @@ s
   }
 
 
+  /* =========================
+     RODAPÉ
+  ========================= */
+
   .trabalhista-footer {
     padding: 45px 22px;
-
     grid-template-columns: 1fr;
-
     gap: 45px;
   }
 
-}
-
-
-/* ===== AJUSTE FINAL FOTO HERO TRABALHISTA ===== */
-
-@media (min-width: 761px) {
-  .trabalhista-hero__lawyer {
-    position: absolute !important;
-    right: -3% !important;
-    bottom: -70px !important;
-
-    width: 900px !important;
-    max-width: 58% !important;
-    height: auto !important;
-
-    object-fit: contain !important;
-    object-position: right bottom !important;
-  }
-}
-
-@media (max-width: 760px) {
-  .trabalhista-hero__lawyer {
-    display: none !important;
-  }
-}
-/* TAMANHO DA FOTO SOMENTE NA PÁGINA TRABALHISTA */
-
-@media (min-width: 761px) {
-  .trabalhista-hero .hero__lawyer {
-    width: 650px !important;
-    max-width: 44% !important;
-
-    right: 1% !important;
-    bottom: -60px !important;
-
-    height: auto !important;
-  }
-}
-
-@media (max-width: 720px) {
-  .trabalhista-hero .hero__lawyer {
-    display: none !important;
-  }
 }
