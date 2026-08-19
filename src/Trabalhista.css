@@ -717,3 +717,8 @@ s
   }
 
 }
+/* REMOVE FOTO DO ADVOGADO DO HERO TRABALHISTA */
+.trabalhista-hero__lawyer,
+.trabalhista-hero .hero__lawyer {
+  display: none !important;
+}
