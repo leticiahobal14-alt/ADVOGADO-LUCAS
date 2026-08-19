@@ -181,19 +181,20 @@
 
 .trabalhista-hero__lawyer {
   position: absolute;
-  right: 3%;
-  bottom: 0;
+
+  right: -2%;
+  bottom: -55px;
+
   z-index: 2;
 
-  width: 500px;
-  max-width: 40%;
+  width: 760px;
+  max-width: 52%;
   height: auto;
 
   object-fit: contain;
   object-position: right bottom;
 }
-
-
+s
 /* =========================================
    SITUAÇÕES
 ========================================= */
@@ -703,4 +704,28 @@
     gap: 45px;
   }
 
+}
+
+
+/* ===== AJUSTE FINAL FOTO HERO TRABALHISTA ===== */
+
+@media (min-width: 761px) {
+  .trabalhista-hero__lawyer {
+    position: absolute !important;
+    right: -3% !important;
+    bottom: -70px !important;
+
+    width: 900px !important;
+    max-width: 58% !important;
+    height: auto !important;
+
+    object-fit: contain !important;
+    object-position: right bottom !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .trabalhista-hero__lawyer {
+    display: none !important;
+  }
 }
