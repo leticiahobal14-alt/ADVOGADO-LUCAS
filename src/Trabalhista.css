@@ -91,16 +91,12 @@
 ========================================= */
 
 .trabalhista-hero {
-  position: relative;
-
-  width: 100%;
-  min-height: 560px;
-
-  padding: 80px 6% 110px;
-
-  overflow: hidden;
-
-  background: #03152f;
+  min-height: auto;
+  padding: 55px 22px 150px;
+}
+.trabalhista-hero::after {
+  bottom: -115px;
+  height: 170px;
 }
 
 .trabalhista-hero::after {
@@ -743,7 +739,7 @@ s
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   .trabalhista-hero .hero__lawyer {
     display: none !important;
   }
