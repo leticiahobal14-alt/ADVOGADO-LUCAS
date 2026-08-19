@@ -4,6 +4,7 @@ import heroTrabalhista from './assets/hero-final.png'
 import fotoSobre from './assets/foto-sobre.png'
 import logoCompleta from './assets/logo-completa.png'
 import logoSimbolo from './assets/icone.svg'
+import logoSimbolo from './assets/logo-simbolo.png'
 
 function Trabalhista() {
   function handleSubmit(event) {
@@ -69,6 +70,11 @@ ${mensagem}`
             <strong>Problemas no trabalho?</strong>{' '}
             Entenda quais são seus direitos.
           </h1>
+          <img
+    src={logoSimbolo}
+    alt=""
+    className="trabalhista-hero__simbolo"
+  />
 
           <p>
             Orientação jurídica em questões trabalhistas, com análise

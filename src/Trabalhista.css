@@ -600,7 +600,15 @@ s
     font-size: 37px;
     line-height: 1.05;
   }
+.trabalhista-hero__title {
+  gap: 14px;
+  align-items: flex-start;
+}
 
+.trabalhista-hero__simbolo {
+  width: 70px;
+  height: 70px;
+}
   .trabalhista-hero p {
     width: 100%;
     max-width: 100%;
