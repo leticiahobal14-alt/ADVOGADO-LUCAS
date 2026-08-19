@@ -185,6 +185,9 @@
   right: -2%;
   bottom: -55px;
   z-index: 2;
+
+  transform: scale(0.78);
+  transform-origin: right bottom;
 }
 
 .trabalhista-hero__lawyer img {
