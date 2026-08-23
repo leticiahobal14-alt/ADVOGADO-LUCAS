@@ -1,10 +1,9 @@
 import './Trabalhista.css'
 
-import heroTrabalhista from './assets/hero-final.png'
+import advogadoHero from './assets/advogado-hero.png'
 import fotoSobre from './assets/foto-sobre.png'
 import logoCompleta from './assets/logo-completa.png'
-import logoSimbolo from './assets/icone.svg'
-import logoSimbolo from './assets/logo-simbolo.png'
+
 
 function Trabalhista() {
   function handleSubmit(event) {
@@ -37,26 +36,24 @@ ${mensagem}`
       {/* CABEÇALHO */}
       <header className="trabalhista-header">
 
-        <a href="/" className="trabalhista-header__logo">
-  <img src={logoSimbolo} alt="Lucas Hobal de Oliveira" />
-</a>
-
         <div className="trabalhista-header__info">
           <span>✉ lucashobaldeoliveiraadv@gmail.com</span>
           <span>☎ 47 9 9961 2565</span>
           <span>◷ 08:00 a 18:00</span>
         </div>
-<a href="/" className="trabalhista-header__home">
-  Site principal
-</a>
+
+        <a href="/" className="trabalhista-header__home">
+          Site principal
+        </a>
+
         <a
-  href="https://wa.me/5547999612565?text=Olá%21%20Gostaria%20de%20orientação%20sobre%20uma%20questão%20trabalhista."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="trabalhista-header__button"
->
-  Entre em contato
-</a>
+          href="https://wa.me/5547999612565?text=Olá%21%20Gostaria%20de%20orientação%20sobre%20uma%20questão%20trabalhista."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="trabalhista-header__button"
+        >
+          Entre em contato
+        </a>
 
       </header>
 
@@ -70,11 +67,6 @@ ${mensagem}`
             <strong>Problemas no trabalho?</strong>{' '}
             Entenda quais são seus direitos.
           </h1>
-          <img
-    src={logoSimbolo}
-    alt=""
-    className="trabalhista-hero__simbolo"
-  />
 
           <p>
             Orientação jurídica em questões trabalhistas, com análise
@@ -87,18 +79,18 @@ ${mensagem}`
           </p>
 
           <a
-  href="https://wa.me/5547999612565?text=Olá%21%20Gostaria%20de%20orientação%20sobre%20uma%20questão%20trabalhista."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="trabalhista-hero__button"
->
-  Falar com advogado
-</a>
+            href="https://wa.me/5547999612565?text=Olá%21%20Gostaria%20de%20orientação%20sobre%20uma%20questão%20trabalhista."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="trabalhista-hero__button"
+          >
+            Falar com advogado
+          </a>
 
         </div>
 
         <img
-          src={heroTrabalhista}
+          src={advogadoHero}
           alt="Advogado Lucas Hobal de Oliveira"
           className="trabalhista-hero__lawyer"
         />
@@ -150,14 +142,15 @@ ${mensagem}`
           </article>
 
         </div>
+
         <a
-  href="https://wa.me/5547999612565?text=Olá%21%20Gostaria%20de%20orientação%20sobre%20uma%20questão%20trabalhista."
-  target="_blank"
-  rel="noopener noreferrer"
-  className="trabalhista-situacoes__button"
->
-  Falar com advogado
-</a>
+          href="https://wa.me/5547999612565?text=Olá%21%20Gostaria%20de%20orientação%20sobre%20uma%20questão%20trabalhista."
+          target="_blank"
+          rel="noopener noreferrer"
+          className="trabalhista-situacoes__button"
+        >
+          Falar com advogado
+        </a>
 
       </section>
 
@@ -270,26 +263,55 @@ ${mensagem}`
 
 
       {/* RODAPÉ */}
-      <footer className="trabalhista-footer">
+      {/* RODAPÉ */}
+<footer className="trabalhista-footer">
 
-        <iframe
-          title="Mapa do escritório"
-          src="https://www.google.com/maps?q=R.%20Martim%20Pescador,%201955,%20Bombas,%20Bombinhas%20SC&output=embed"
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        />
+  <div className="trabalhista-footer__main">
 
-        <a href="/" className="trabalhista-footer__logo">
-          <img
-            src={logoCompleta}
-            alt="Lucas Hobal de Oliveira Advogado"
-            loading="lazy"
-          />
+    <div className="trabalhista-footer__contato">
 
-          <span>Conheça o site principal</span>
-        </a>
+      <div className="trabalhista-footer__linha" />
 
-      </footer>
+      <span className="trabalhista-footer__chamada">
+        Fale Conosco
+      </span>
+
+      <h3>Atendimento Online</h3>
+
+      <a href="tel:+5547999612565">
+        ☎ &nbsp; 47 9 9961 2565
+      </a>
+
+      <a href="mailto:lucashobaldeoliveiraadv@gmail.com">
+        ✉ &nbsp; lucashobaldeoliveiraadv@gmail.com
+      </a>
+
+    </div>
+
+
+    <iframe
+      title="Mapa do escritório"
+      src="https://www.google.com/maps?q=R.%20Martim%20Pescador,%201955,%20Bombas,%20Bombinhas%20SC&output=embed"
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    />
+
+  </div>
+
+
+  <div className="trabalhista-footer__bottom">
+
+    <span>
+      © Todos os direitos reservados – 2026
+    </span>
+
+    <span>
+      OAB/SC 75.614
+    </span>
+
+  </div>
+
+</footer>
 
     </div>
   )

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import './App.css'
-import heroVisual from './assets/hero-final.png'
-import logoSimbolo from './assets/icone.svg'
+import advogadoHero from './assets/advogado-hero.png'
+import logoSimbolo from "./assets/logo-simbolo.png";
 import advogadoSobre from './assets/foto-sobre.png'
 import cardCriminal from './assets/card-criminal.png'
 import cardFamilia from './assets/card-familia.png'
@@ -328,11 +328,11 @@ function Home() {
               </a>
             </div>
 
-            <img
-              className="hero__lawyer"
-              src={heroVisual}
-              alt="Advogado Lucas Hobal de Oliveira"
-            />
+           <img
+  className="hero__lawyer"
+  src={advogadoHero}
+  alt="Advogado Lucas Hobal de Oliveira"
+/>
           </div>
         </section>
 

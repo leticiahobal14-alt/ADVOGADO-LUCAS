@@ -1432,3 +1432,279 @@ button, input, select, textarea { font: inherit; }
   outline: 0 !important;
   box-shadow: none !important;
 }
+/* =========================================
+   AJUSTE FINAL - FOTO NOVA HERO HOME
+========================================= */
+
+@media (min-width: 721px) {
+
+  .hero {
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  .hero__inner {
+    position: relative !important;
+    overflow: hidden !important;
+  }
+
+  .hero__copy {
+    position: relative !important;
+    z-index: 4 !important;
+
+    width: 48% !important;
+    max-width: 650px !important;
+  }
+
+  .hero__lawyer {
+    display: block !important;
+
+    position: absolute !important;
+clip-path: inset(0 0 0 300px) !important;
+    right: 0 !important;
+    bottom: -150 !important;
+
+    z-index: 2 !important;
+
+    width: 82% !important;
+    height: auto !important;
+
+    max-width: none !important;
+    max-height: 200% !important;
+
+    object-fit: contain !important;
+    object-position: right bottom !important;
+
+    transform: none !important;
+    filter: none !important;
+
+    pointer-events: none !important;
+    opacity: 0.5 !important;
+  }
+}
+/* =========================================
+   FUNDOS HOME
+========================================= */
+
+/* 1ª PÁGINA / HERO */
+.hero {
+  background: #000000 !important;
+}
+
+
+/* 2ª PÁGINA / ÁREAS DE ATUAÇÃO */
+.services-carousel {
+  background: #03152f !important;
+}
+/* =========================================
+   REMOVE ESPAÇO EMBAIXO DO HERO DA HOME
+========================================= */
+
+@media (min-width: 721px) {
+
+  .hero {
+    min-height: 620px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .hero__inner {
+    min-height: 620px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .hero::after {
+    display: none !important;
+  }
+
+  .hero__lawyer {
+    bottom: 0 !important;
+  }
+
+}
+/* =========================================
+   NOVO VISUAL DO CARROSSEL - DESKTOP
+========================================= */
+
+@media (min-width: 701px) {
+
+  .services-carousel {
+    position: relative;
+
+    width: 100%;
+    min-height: 590px;
+
+    padding: 55px 55px 35px;
+
+    overflow: hidden;
+
+    background: #03152f !important;
+  }
+
+
+  /* ÁREA ONDE OS CARDS DESLIZAM */
+  .services-carousel__viewport {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    padding: 40px 20px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+
+  /* LINHA DOS CARDS */
+  .services-carousel__track {
+    display: flex;
+    align-items: center;
+
+    gap: 24px;
+
+    width: max-content;
+    min-width: 100%;
+
+    padding: 0 70px;
+  }
+
+
+  /* CARD NORMAL */
+  .service-card {
+    flex: 0 0 285px !important;
+
+    width: 285px !important;
+    height: 440px !important;
+
+   border: none !important;
+box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.10) !important;
+    border-radius: 18px !important;
+
+    background: #111111;
+
+    opacity: 0.58 !important;
+
+    transform: scale(0.96) !important;
+
+    box-shadow: none !important;
+
+    transition:
+      opacity 0.35s ease,
+      transform 0.35s ease,
+      border-color 0.35s ease,
+      width 0.35s ease,
+      height 0.35s ease !important;
+  }
+
+
+  /* CARD CENTRAL / ATIVO */
+  .service-card--active {
+    flex: 0 0 320px !important;
+
+    width: 320px !important;
+    height: 465px !important;
+
+border: 2px solid #c5a154 !important;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22), 0 0 0 1px rgba(197, 161, 84, 0.35) !important;
+    opacity: 1 !important;
+
+    transform: scale(1) !important;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22) !important;
+  }
+
+
+  /* IMAGENS DOS CARDS */
+  .service-card__background {
+    opacity: 0.48 !important;
+  }
+
+
+  .service-card--active .service-card__background {
+    opacity: 0.72 !important;
+  }
+
+
+  /* CONTEÚDO */
+  .service-card__content {
+    padding: 30px 22px !important;
+  }
+
+
+  .service-card__content h2 {
+    min-height: 68px !important;
+
+    margin-bottom: 22px !important;
+
+    font-size: 26px !important;
+    line-height: 1.08 !important;
+  }
+
+
+  .service-card__content li {
+    margin-bottom: 8px !important;
+
+    font-size: 17px !important;
+    line-height: 1.2 !important;
+  }
+
+
+  /* SETAS */
+  .carousel-arrow {
+    width: 48px !important;
+    height: 48px !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.45) !important;
+    border-radius: 50% !important;
+
+    background: rgba(0, 0, 0, 0.2) !important;
+
+    color: #ffffff !important;
+
+    font-size: 42px !important;
+    line-height: 1 !important;
+  }
+
+
+  .carousel-arrow--left {
+    left: 18px !important;
+  }
+
+
+  .carousel-arrow--right {
+    right: 18px !important;
+  }
+
+
+  .carousel-arrow:hover {
+    background: rgba(197, 161, 84, 0.25) !important;
+
+    border-color: #c5a154 !important;
+
+    opacity: 1 !important;
+  }
+
+
+  /* BOLINHAS */
+  .carousel-dots {
+    margin-top: 10px !important;
+
+    gap: 9px !important;
+  }
+
+
+  .carousel-dot {
+    width: 10px !important;
+    height: 10px !important;
+
+    background: rgba(255, 255, 255, 0.75) !important;
+  }
+
+
+  .carousel-dot--active {
+    background: #c5a154 !important;
+
+    transform: scale(1.15) !important;
+  }
+
+}
