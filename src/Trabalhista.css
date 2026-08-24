@@ -913,5 +913,312 @@ clip-path: inset(0 0 0 280px);
 
     font-size: 12px;
   }
+}
+/* ==================================================
+   RESPONSIVO FINAL - TRABALHISTA
+================================================== */
+
+@media (max-width: 760px) {
+
+  /* =========================================
+     CABEÇALHO
+  ========================================= */
+
+  .trabalhista-header {
+    min-height: 58px !important;
+    padding: 7px 12px !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    gap: 8px !important;
+  }
+
+  .trabalhista-header__logo img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  /* some e-mail, telefone e horário */
+  .trabalhista-header__info {
+    display: none !important;
+  }
+
+  .trabalhista-header__home {
+    margin-left: auto !important;
+
+    padding: 7px 10px !important;
+
+    font-size: 11px !important;
+  }
+
+  .trabalhista-header__button {
+    padding: 7px 10px !important;
+
+    font-size: 11px !important;
+  }
+
+
+  /* =========================================
+     HERO
+  ========================================= */
+
+  .trabalhista-hero {
+    min-height: auto !important;
+
+    padding: 38px 20px 45px !important;
+
+    background: #000000 !important;
+
+    overflow: hidden !important;
+  }
+
+  /* TIRA FOTO DO ADVOGADO */
+  .trabalhista-hero__lawyer {
+    display: none !important;
+  }
+
+  /* TIRA SÍMBOLO DECORATIVO */
+  .trabalhista-hero__simbolo {
+    display: none !important;
+  }
+
+  /* SEM ONDA */
+  .trabalhista-hero::after {
+    display: none !important;
+  }
+
+  .trabalhista-hero__content {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    padding: 0 !important;
+  }
+
+  .trabalhista-hero h1 {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 0 22px !important;
+
+    font-size: 34px !important;
+    line-height: 1.04 !important;
+  }
+
+  .trabalhista-hero h1 strong {
+    display: block !important;
+
+    color: #fff200 !important;
+  }
+
+  .trabalhista-hero p {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin-bottom: 8px !important;
+
+    font-size: 18px !important;
+    line-height: 1.4 !important;
+  }
+
+  .trabalhista-hero__button {
+    margin: 28px 0 0 !important;
+
+    padding: 10px 24px !important;
+
+    font-size: 17px !important;
+  }
+
+
+  /* =========================================
+     CARDS DE SITUAÇÕES
+  ========================================= */
+
+  .trabalhista-situacoes {
+    width: 100% !important;
+
+    padding: 38px 0 45px !important;
+
+    background: #03152f !important;
+
+    overflow: hidden !important;
+  }
+
+  .trabalhista-situacoes h2 {
+    margin: 0 0 25px !important;
+
+    padding: 0 20px !important;
+
+    text-align: left !important;
+
+    font-size: 29px !important;
+    line-height: 1.1 !important;
+  }
+
+
+  /* TRANSFORMA O GRID EM CARROSSEL HORIZONTAL */
+  .trabalhista-situacoes__grid {
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 5px 16px 12px !important;
+
+    display: flex !important;
+
+    gap: 14px !important;
+
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+
+    scroll-snap-type: x mandatory !important;
+
+    scrollbar-width: none !important;
+  }
+
+  .trabalhista-situacoes__grid::-webkit-scrollbar {
+    display: none !important;
+  }
+
+
+  /* 1 CARD GRANDE + PONTINHA DO PRÓXIMO */
+  .trabalhista-situacoes article {
+    flex: 0 0 82vw !important;
+
+    width: 82vw !important;
+    min-width: 82vw !important;
+
+    min-height: 145px !important;
+
+    padding: 20px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    font-size: 23px !important;
+    line-height: 1.05 !important;
+
+    scroll-snap-align: start !important;
+  }
+
+
+  .trabalhista-situacoes__button {
+    margin: 27px auto 0 !important;
+
+    padding: 10px 24px !important;
+
+    font-size: 17px !important;
+  }
+
+
+  /* =========================================
+     CONTATO
+  ========================================= */
+
+  .trabalhista-contato {
+    padding: 55px 20px !important;
+
+    grid-template-columns: 1fr !important;
+
+    gap: 35px !important;
+  }
+
+  .trabalhista-contato__texto h2 {
+    font-size: 34px !important;
+    line-height: 1.08 !important;
+  }
+
+  .trabalhista-contato__linha {
+    width: 65% !important;
+
+    margin: 16px 0 22px !important;
+  }
+
+  .trabalhista-contato__texto p {
+    font-size: 23px !important;
+    line-height: 1.3 !important;
+  }
+
+  .trabalhista-form {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    padding: 25px 20px !important;
+
+    justify-self: stretch !important;
+  }
+
+
+  /* =========================================
+     SOBRE
+  ========================================= */
+
+  .trabalhista-sobre {
+    padding: 28px 15px !important;
+  }
+
+  .trabalhista-sobre__box {
+    padding: 22px 18px 25px !important;
+  }
+
+  .trabalhista-sobre__box h2 {
+    font-size: 31px !important;
+    line-height: 1.08 !important;
+  }
+
+  .trabalhista-sobre__conteudo {
+    grid-template-columns: 1fr !important;
+
+    gap: 22px !important;
+  }
+
+  .trabalhista-sobre__conteudo img {
+    width: min(250px, 100%) !important;
+    height: 300px !important;
+
+    margin: 0 auto !important;
+  }
+
+  .trabalhista-sobre__conteudo > div {
+    min-height: 0 !important;
+  }
+
+  .trabalhista-sobre__conteudo p {
+    font-size: 19px !important;
+    line-height: 1.35 !important;
+  }
+
+  .trabalhista-sobre__conteudo strong {
+    margin-top: 20px !important;
+
+    text-align: right !important;
+  }
+
+
+  /* =========================================
+     RODAPÉ
+  ========================================= */
+
+  .trabalhista-footer__main {
+    padding: 40px 20px !important;
+
+    grid-template-columns: 1fr !important;
+
+    gap: 32px !important;
+  }
+
+  .trabalhista-footer iframe {
+    height: 230px !important;
+  }
+
+  .trabalhista-footer__bottom {
+    padding: 12px 15px !important;
+
+    flex-direction: column !important;
+
+    gap: 4px !important;
+
+    text-align: center !important;
+  }
 
 }

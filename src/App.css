@@ -1708,3 +1708,87 @@ box-shadow: 0 10px 30px rgba(0, 0, 0, 0.22), 0 0 0 1px rgba(197, 161, 84, 0.35) 
   }
 
 }
+@media (max-width: 760px) {
+
+  .hero {
+    min-height: auto !important;
+    padding: 0 !important;
+    background: #000000 !important;
+  }
+
+  .hero__inner {
+    min-height: auto !important;
+    padding: 38px 20px 45px !important;
+  }
+
+  .hero__lawyer {
+    display: none !important;
+  }
+
+  .hero::after {
+    display: none !important;
+  }
+
+  .hero__copy {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    text-align: left !important;
+  }
+
+  .hero__eyebrow {
+    font-size: 32px !important;
+    line-height: 1.05 !important;
+    margin-bottom: 18px !important;
+  }
+
+  .hero h1 {
+    font-size: 18px !important;
+    line-height: 1.45 !important;
+  }
+
+  .button--hero {
+    margin: 28px 0 0 !important;
+    font-size: 17px !important;
+  }
+
+
+  /* CARROSSEL */
+  .services-carousel {
+    min-height: auto !important;
+    padding: 35px 0 30px !important;
+  }
+
+  .services-carousel__viewport {
+    padding: 20px 16px !important;
+  }
+
+  .services-carousel__track {
+    gap: 14px !important;
+    padding: 0 16px 0 0 !important;
+  }
+
+  .service-card,
+  .service-card--active {
+    flex: 0 0 82vw !important;
+    width: 82vw !important;
+    height: 410px !important;
+
+    transform: none !important;
+    opacity: 1 !important;
+
+    scroll-snap-align: start !important;
+  }
+
+  .service-card__content h2 {
+    font-size: 24px !important;
+  }
+
+  .service-card__content li {
+    font-size: 16px !important;
+  }
+
+  .carousel-arrow {
+    display: none !important;
+  }
+}
